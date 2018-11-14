@@ -4,9 +4,5 @@ def factorial(num):
 	else:
 		return num*factorial(num-1)
 
-print(factorial(1))
-print(factorial(2))
-print(factorial(3))
-print(factorial(4))
-
-
+number = int(input("Please write your number - "))
+print(factorial(number))
