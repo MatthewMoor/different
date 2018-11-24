@@ -1,0 +1,57 @@
+/*@font-face {
+	font-family: "CherrySwash-Regular";
+	src: url("C:\Users\Дмитрий ноги ножницы\Desktop\Project\references\fonts\cherryswash-regular\CherrySwash-Regular.ttf");
+	src: url("C:\Users\Дмитрий ноги ножницы\Desktop\Project\references\fonts\cherryswash-regular\CherrySwash-Regular.woff"), format("woff");
+
+	font-style: normal;
+	font-weight: normal;
+}*/
+
+h1 {
+	font-family: 'Cherry Swash';
+	font-weight: lighter;
+}
+p, li,  {
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Bellefair', serif;
+	font-weight: lighter;
+
+}
+p {
+	color: #424242;
+}
+.caption {
+	font-family: 'Bellefair', serif;
+	font-weight: lighter;
+}
+.caption2 {
+	font-family: 'Bellefair', serif;
+}
+.sl__zag {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 45pt;
+	color: white;
+	/*text-align: center;*/
+}
+.sl__text {
+	color: white;
+	font-family: 'Bellefair', serif;
+	font-size: 18pt;
+	background-color: rgba(100, 100, 100, 0.3);
+}
+.conteiner_read {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	border-radius: 10%;
+	bottom: 350px;
+	color: white;
+	width: 230px;
+	height: 50px;
+	border: 3px solid;
+}
+a {
+	font-family: 'Cherry Swash';
+	font-weight: lighter;
+}
