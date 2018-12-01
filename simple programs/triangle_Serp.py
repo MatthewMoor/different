@@ -15,17 +15,17 @@ def sierpinski(points, degree, myTurtle):
 	triangle(points, myTurtle)
 	if degree > 0:
 		sierpinski([points[0],
-						getMiddle(points[0], points[1]),
-						getMiddle(points[0], points[2])],
-					degree-1, myTurtle)
+									getMiddle(points[0], points[1]),
+									getMiddle(points[0], points[2])],
+					     degree-1, myTurtle)
 		sierpinski([points[1],
-					getMiddle(points[0], points[1]),
-					getMiddle(points[1], points[2])],
-					degree-1, myTurtle)
+									getMiddle(points[0], points[1]),
+									getMiddle(points[1], points[2])],
+					     degree-1, myTurtle)
 		sierpinski([points[2],
-						getMiddle(points[2], points[1]),
-						getMiddle(points[0], points[2])],
-					degree-1, myTurtle)
+									getMiddle(points[2], points[1]),
+									getMiddle(points[0], points[2])],
+					     degree-1, myTurtle)
 	
 def main():
 	myTurtle = tr.Turtle()
