@@ -70,7 +70,9 @@ def main():
     c = np.array(getc(n1, h1, m, r))
     d = np.array(getd(n1, h1, r, fi, c))
     y = np.array(gety(n1, h1, c, d))
-    df = pd.DataFrame({ 'x': pd.Series(x), 'y': pd.Series(y), 'm': pd.Series(m[0:10]), 'r': pd.Series(r[0:10]), 'fi': pd.Series(fi[0:10]), 'c': pd.Series(c[0:10]), 'd': pd.Series(d[0:10]), })
+    df = pd.DataFrame({'x': pd.Series(x), 'y': pd.Series(y), 'm': pd.Series(m[0:10]),
+                       'r': pd.Series(r[0:10]), 'fi': pd.Series(fi[0:10]), 'c': pd.Series(c[0:10]),
+                       'd': pd.Series(d[0:10]), })
     df = df[['x', 'y', 'm', 'r', 'fi', 'c', 'd']]
     df.index.name = 'n'
     print(df)
@@ -87,7 +89,9 @@ def main():
     y2 = np.array(gety(n2, h2, c2, d2))
     
     
-    df = pd.DataFrame({ 'x': pd.Series(x2), 'y': pd.Series(y2), 'm': pd.Series(m2[0:20]), 'r': pd.Series(r2[0:20]), 'fi': pd.Series(fi2[0:20]), 'c': pd.Series(c2[0:20]), 'd': pd.Series(d2[0:20]), })
+    df = pd.DataFrame({'x': pd.Series(x2), 'y': pd.Series(y2), 'm': pd.Series(m2[0:20]),
+                       'r': pd.Series(r2[0:20]), 'fi': pd.Series(fi2[0:20]), 'c': pd.Series(c2[0:20]),
+                       'd': pd.Series(d2[0:20]), })
     df.index.name = 'n'
     print(df[['x', 'y', 'm', 'r', 'fi', 'c', 'd']])
     
