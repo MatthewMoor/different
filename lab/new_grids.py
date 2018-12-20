@@ -75,15 +75,15 @@ def main():
     iD = [i for i in range(-1, n + 1)]
     t = np.insert(t, 0, None)
     df = pd.DataFrame({
+
         'id': pd.Series(iD),
         'ti/xi': pd.Series(t),
         'x = ' + str(x[0]): pd.Series(grid[0]), 'x = ' + str(x[1]): pd.Series(grid[1]),
-        'x = ' + str(x[2]): pd.Series(grid[2]),
-        'x = ' + str(x[3]): pd.Series(grid[3]), 'x = ' + str(x[4]): pd.Series(grid[4]),
-        'x = ' + str(x[5]): pd.Series(grid[5]),
+        'x = ' + str(x[2]): pd.Series(grid[2]), 'x = ' + str(x[3]): pd.Series(grid[3]),
+        'x = ' + str(x[4]): pd.Series(grid[4]), 'x = ' + str(x[5]): pd.Series(grid[5]),
         'x = ' + str(x[6]): pd.Series(grid[6]), 'x = ' + str(x[7]): pd.Series(grid[7]),
-        'x = ' + str(x[8]): pd.Series(grid[8]),
-        'x = ' + str(x[9]): pd.Series(grid[9]), 'x = ' + str(x[10]): pd.Series(grid[10]),
+        'x = ' + str(x[8]): pd.Series(grid[8]), 'x = ' + str(x[9]): pd.Series(grid[9]),
+        'x = ' + str(x[10]): pd.Series(grid[10]),
 
     })
     df.set_index('id', inplace=True)
