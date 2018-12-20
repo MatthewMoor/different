@@ -57,12 +57,11 @@ def get_grid(x, t, S):
 
         'ti/xi': pd.Series(t),
         'x = ' + str(table_x[0]): pd.Series(u[0]), 'x = ' + str(table_x[1]): pd.Series(u[1]),
-        'x = ' + str(table_x[2]): pd.Series(u[2]),
-        'x = ' + str(table_x[3]): pd.Series(u[3]), 'x = ' + str(table_x[4]): pd.Series(u[4]),
-        'x = ' + str(table_x[5]): pd.Series(u[5]),
+        'x = ' + str(table_x[2]): pd.Series(u[2]), 'x = ' + str(table_x[3]): pd.Series(u[3]),
+        'x = ' + str(table_x[4]): pd.Series(u[4]), 'x = ' + str(table_x[5]): pd.Series(u[5]),
         'x = ' + str(table_x[6]): pd.Series(u[6]), 'x = ' + str(table_x[7]): pd.Series(u[7]),
-        'x = ' + str(table_x[8]): pd.Series(u[8]),
-        'x = ' + str(table_x[9]): pd.Series(u[9]), 'x = ' + str(table_x[10]): pd.Series(u[10]),
+        'x = ' + str(table_x[8]): pd.Series(u[8]), 'x = ' + str(table_x[9]): pd.Series(u[9]),
+        'x = ' + str(table_x[10]): pd.Series(u[10]),
         
     })
     print('S:' + str(S))
@@ -108,12 +107,11 @@ def get_running(x, S):
 
         'ti/xi': pd.Series(t),
         'x = ' + str(table_x[0]): pd.Series(u[0]), 'x = ' + str(table_x[1]): pd.Series(u[1]),
-        'x = ' + str(table_x[2]): pd.Series(u[2]),
-        'x = ' + str(table_x[3]): pd.Series(u[3]), 'x = ' + str(table_x[4]): pd.Series(u[4]),
-        'x = ' + str(table_x[5]): pd.Series(u[5]),
+        'x = ' + str(table_x[2]): pd.Series(u[2]), 'x = ' + str(table_x[3]): pd.Series(u[3]),
+        'x = ' + str(table_x[4]): pd.Series(u[4]), 'x = ' + str(table_x[5]): pd.Series(u[5]),
         'x = ' + str(table_x[6]): pd.Series(u[6]), 'x = ' + str(table_x[7]): pd.Series(u[7]),
-        'x = ' + str(table_x[8]): pd.Series(u[8]),
-        'x = ' + str(table_x[9]): pd.Series(u[9]), 'x = ' + str(table_x[10]): pd.Series(u[10]),
+        'x = ' + str(table_x[8]): pd.Series(u[8]), 'x = ' + str(table_x[9]): pd.Series(u[9]),
+        'x = ' + str(table_x[10]): pd.Series(u[10]),
 
     })
     print('Method running')
