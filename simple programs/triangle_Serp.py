@@ -31,7 +31,7 @@ def main():
 	myTurtle = tr.Turtle()
 	myWin = tr.Screen()
 	points = [[0, 0], [-230, -300], [230, -300]]
-	degree = 4
+	degree = 5
 	sierpinski(points, degree, myTurtle)
 	myWin.exitonclick()
 	
