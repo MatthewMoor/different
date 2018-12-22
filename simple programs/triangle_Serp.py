@@ -30,4 +30,3 @@ def main():
     myWin.exitonclick()
 
 main()
-turtle.getscreen().getcanvas().postscript(file="Sierpinskii.eps")
