@@ -1,4 +1,5 @@
 import turtle as tr
+
 def triangle(points, myTurtle):
     myTurtle.up()
     myTurtle.goto(points[0][0], points[0][1])
@@ -29,3 +30,4 @@ def main():
     myWin.exitonclick()
 
 main()
+turtle.getscreen().getcanvas().postscript(file="Sierpinskii.eps")
