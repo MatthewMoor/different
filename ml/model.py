@@ -17,10 +17,12 @@ print(X.head())
 
 melb_model = DecisionTreeRegressor(random_state=1)
 
-melb_model.fit(X, y)
+# Validation
+from sklearn.metrics import mean_absolute_error
+from sklearn.model_selection import train_test_split
 
-# Predictions
-print('Making predictions for the following 5 houses')
-print(X.head())
-print("The predictions are")
-print(melb_model.predict(X.head()))
+train_X, val_X, train_y, val_y = train_test_split(X, y, random_state = 0)
+melb_model.fit(train_X, train_y)
+
+melb_model_prediction = melb_model.predict(val_X)
+print(mean_absolute_error(val_y, melb_model_prediction))
