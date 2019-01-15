@@ -1,5 +1,5 @@
 def sum_word(string):
-	#But it was possible in one line :/
+    #But it was possible in one line :/
     digits = [i for i in range(1, 27)]
     letters = ['a', 'b', 'c', 'd', 'e', 'f',
                'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
