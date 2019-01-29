@@ -25,8 +25,9 @@ def main():
     myTurtle = tr.Turtle()
     myWin = tr.Screen()
     points = [[0, 0], [-230, -300], [230, -300]]
-    degree = 5
+    degree = 4
     sierpinski(points, degree, myTurtle)
     myWin.exitonclick()
-
+    ts = tr.getscreen()
+    ts.getcanvas().postscript(file="fractal.eps")
 main()
